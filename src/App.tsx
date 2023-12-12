@@ -1,6 +1,6 @@
 import Button from './components/Button';
 import Container from './components/Container.tsx';
-import { Demo } from './components/IconButton.tsx';
+import { Demo } from './components/List.tsx';
 
 function App() {
   return (

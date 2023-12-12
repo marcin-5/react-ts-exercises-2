@@ -1,8 +1,9 @@
-import { ComponentPropsWithoutRef } from 'react';
+import { type ComponentPropsWithoutRef } from 'react';
 
 type ButtonProps = ComponentPropsWithoutRef<'button'> & {
   href?: never;
 };
+
 type AnchorProps = ComponentPropsWithoutRef<'a'> & {
   href?: string;
 };

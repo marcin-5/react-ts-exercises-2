@@ -1,12 +1,12 @@
 import Button from './components/Button';
-import { Demo } from './components/Card.tsx';
 import Container from './components/Container.tsx';
+import { Demo } from './components/IconButton.tsx';
 
 function App() {
   return (
     <main>
       <Container as={Button}>Click Me</Container>
-      {Demo()}
+      <div style={{ margin: '20px' }}>{Demo()}</div>
     </main>
   );
 }

@@ -1,12 +1,12 @@
-import Button from './components/Button';
-import Container from './components/Container.tsx';
-import { Demo } from './components/List.tsx';
+import { useRef } from 'react';
+import Input from './components/Input.tsx';
 
 function App() {
+  const input = useRef<HTMLInputElement>(null);
+
   return (
     <main>
-      <Container as={Button}>Click Me</Container>
-      <div style={{ margin: '20px' }}>{Demo()}</div>
+      <Input label="Test" id="test" ref={input} />
     </main>
   );
 }

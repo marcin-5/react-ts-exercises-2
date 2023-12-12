@@ -5,11 +5,14 @@ type InputProps = {
   label: string;
 } & ComponentPropsWithoutRef<'input'>;
 
-const Input = forwardRef<HTMLInputElement, InputProps>(function Input({ id, label, ...props }, ref) {
+const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
+  { id, label, ...props },
+  ref
+) {
   return (
     <p>
       <label htmlFor={id}>{label}</label>
-      <input id={id} {...props} ref={ref} />
+      <input id={id} name={id} {...props} ref={ref} />
     </p>
   );
 });
